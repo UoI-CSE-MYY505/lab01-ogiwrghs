@@ -11,7 +11,7 @@
 matric: # Words ending with ':' are **labels**
         # The common convention is to write labels starting from the leftmost column.
         # Try to keep label names short
-        .word 30  # This directive reserves enough space for a word in memory
+        .word 5555  # This directive reserves enough space for a word in memory
                   #  and initializes it with the specific value.
 matricplus1:
         .word 0   
@@ -80,7 +80,7 @@ prog:   # Labels in code are used for control flow: if/then/else, loops, etc.
         
 exit: 
         addi       a7, zero, 10   # system service 10 is exit
-        ecall                     # we are outa here.
+        ecall                     # we are outta here.
         
 ###############################################################################
 
